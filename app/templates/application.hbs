@@ -1,5 +1,14 @@
 <nav class="header">
+  <div class="container">
+    {{link-to 'Mark Oleson' 'index' class="logo"}}
 
+    <ul>
+      <li>{{link-to 'About' 'about'}}</li>
+      <li>{{link-to 'Blog' 'blog'}}</li>
+    </ul>
+  </div>
 </nav>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>

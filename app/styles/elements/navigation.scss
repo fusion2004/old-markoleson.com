@@ -1,3 +1,7 @@
+body {
+  padding-top: $navigation-height;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -7,4 +11,43 @@
   border-top: solid $navigation-border-height $navigation-border-bg;
   background: $navigation-bg;
   color: $navigation-text-color;
+
+  a {
+    color: $navigation-text-color;
+    font-size: $large-size;
+    text-decoration: none;
+    padding: 0 20px;
+
+    &:hover {
+      background: darken($navigation-bg, 10%);
+    }
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    height: $navigation-bar-height;
+    line-height: $navigation-bar-height;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+  }
+
+  li {
+    display: block;
+    float: left;
+    height: $navigation-bar-height;
+    line-height: $navigation-bar-height;
+    margin: 0 10px;
+
+    a {
+      display: inline-block;
+      height: $navigation-bar-height;
+      line-height: $navigation-bar-height;
+    }
+  }
 }

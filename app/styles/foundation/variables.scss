@@ -7,13 +7,24 @@ $light-font: 'NeueHaasUnicaPro-Light', 'Helvetica Neue', Helvetica, Arial, sans-
 
 
 // COLORS
+$cream: #f7eac8;
 $green: #1fda9a;
 $blue: #28abe3;
 $blue-lightened: #d1f1ff;
 
+
+// TEXT SIZE
+$normal-size: 18px;
+$large-size: 22px;
+
+
 // NAV
-$navigation-height: 100px;
+$navigation-bar-height: 100px;
 $navigation-border-height: 10px;
+$navigation-height: $navigation-bar-height + $navigation-border-height;
+
 $navigation-bg: $blue;
 $navigation-border-bg: $green;
 $navigation-text-color: $blue-lightened;
+
+
